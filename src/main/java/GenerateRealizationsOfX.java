@@ -3,6 +3,14 @@ public class GenerateRealizationsOfX {
     static final int MULTIPLIER = 24693;
     static final int INCREMENT = 3967;
     static final int MODULUS = 262144;
+    public static void main(String[] args) {
+        System.out.println(generateRandomProbability(1));
+        System.out.println(generateRandomProbability(2));
+        System.out.println(generateRandomProbability(3));
+        System.out.println(generateRandomProbability(51));
+        System.out.println(generateRandomProbability(52));
+        System.out.println(generateRandomProbability(53));
+    }
     public static double generateRandomProbability(int index) {
         long randomNumber = STARTING_SEED;
         for(int i = 0; i < index; i++) {
