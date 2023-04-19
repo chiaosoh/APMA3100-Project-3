@@ -16,4 +16,7 @@ public class GenerateRealizationsOfX {
     public static double getRandomProbability(long randomNumber) {
         return (double) (randomNumber)/MODULUS;
     }
+    public static double getDistanceBetweenDropAndTarget(double probability) {
+        return Math.sqrt(-2 * 57 * 57 * Math.log(1-probability));
+    }
 }
